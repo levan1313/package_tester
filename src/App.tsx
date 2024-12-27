@@ -22,6 +22,7 @@ export default App;
 const data = {
   user: "Standalone User",
   buttonLabel: "Development Mode Button",
+  body:"",
   leaderBoards: {
     "0": {
       title: "daily leaderboard",
