@@ -1,20 +1,24 @@
 import React, { useEffect, useRef } from "react";
 import { initializeBuilderData, renderBuilder } from "promotion_builder";
+import Sandbox from "./sandbox";
 
 const App: React.FC = () => {
   const ref = useRef(null);
   useEffect(() => {
     // Initialize the package
-    initializeBuilderData({
-      data,
-      editorConfig,
-    });
+    // initializeBuilderData({
+    //   data,
+    //   editorConfig,
+    // });
 
     // Render the package UI
-    renderBuilder(ref);
+    // renderBuilder(ref);
   }, []);
 
-  return <div ref={ref}></div>;
+  return <div>
+    {/* <div ref={ref}></div>; */}
+    <Sandbox />
+    </div>
 };
 
 export default App;
